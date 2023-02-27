@@ -12,7 +12,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name= "freeBoard_crud")
+@Table(name= "tb_gr_free")
 public class FreeBoard {
 	
 	@Id

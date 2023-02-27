@@ -9,7 +9,7 @@ import com.guro.board.model.FreeBoard;
 @Repository
 public interface FreeBoardRepository extends CrudRepository<FreeBoard, Integer>{
 	
-	FreeBoard findTopByOrderByFreeBoardIdDesc();
+	FreeBoard findTopByOrderByBnoDesc();
 	
 	FreeBoard save(FreeBoard freeBoard);
 	

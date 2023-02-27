@@ -17,7 +17,7 @@ public class FreeBoardServiceImpl implements FreeBoardService {
 	}
 	
 	public void update(FreeBoard freeBoard) {
-		FreeBoard currFreeBoard = dao.findTopByOrderByFreeBoardIdDesc();
+		FreeBoard currFreeBoard = dao.findTopByOrderByBnoDesc();
 		currFreeBoard.setBno(freeBoard.getBno());
 		currFreeBoard.setContent(freeBoard.getContent());
 		currFreeBoard.setWriter(freeBoard.getWriter());
@@ -30,7 +30,7 @@ public class FreeBoardServiceImpl implements FreeBoardService {
 	}
 	
 	public FreeBoard select() {
-		return dao.findTopByOrderByFreeBoardIdDesc();
+		return dao.findTopByOrderByBnoDesc();
 		
 	}	
 }
